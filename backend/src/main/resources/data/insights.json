@@ -1,0 +1,602 @@
+{
+ "meta": {
+  "analyticsRows": 15841,
+  "analyticsClean": 14840,
+  "dsRows": 1602,
+  "companies": 642,
+  "dsPostings": 93005,
+  "juniors": 139,
+  "seniors": 161,
+  "dataQuality": [
+   "Data Science Jobs: salaries stored as text (\"7.8L\") converted to numbers; 0 unparseable rows dropped; 5 extreme salary outliers (>Q3+3*IQR) kept but reported with weighted averages.",
+   "Analytics Jobs: 1001 exact duplicate postings removed (15841 -> 14840).",
+   "Analytics Jobs: job_description missing in 23% and job_type in 78% of rows, so analysis relies on key_skills, location, salary band and designation.",
+   "Analytics Jobs: placeholder skill tokens such as \"...\" dropped; 5 postings have no usable skills.",
+   "JDS / SDS files: 0 missing values and 0 duplicates; scores on 1-5 (skills) and normalized (traits). Column name \" extraversion\" had a stray space (fixed)."
+  ]
+ },
+ "topSkills": [
+  {
+   "name": "SQL",
+   "count": 836,
+   "pct": 5.6
+  },
+  {
+   "name": "Python",
+   "count": 778,
+   "pct": 5.2
+  },
+  {
+   "name": "Data Analysis",
+   "count": 557,
+   "pct": 3.8
+  },
+  {
+   "name": "Machine Learning",
+   "count": 555,
+   "pct": 3.7
+  },
+  {
+   "name": "R",
+   "count": 554,
+   "pct": 3.7
+  },
+  {
+   "name": "SAS",
+   "count": 543,
+   "pct": 3.7
+  },
+  {
+   "name": "Excel",
+   "count": 345,
+   "pct": 2.3
+  },
+  {
+   "name": "Data Analytics",
+   "count": 324,
+   "pct": 2.2
+  },
+  {
+   "name": "Hadoop",
+   "count": 281,
+   "pct": 1.9
+  },
+  {
+   "name": "Spark",
+   "count": 254,
+   "pct": 1.7
+  },
+  {
+   "name": "Big Data",
+   "count": 237,
+   "pct": 1.6
+  },
+  {
+   "name": "Data Science",
+   "count": 219,
+   "pct": 1.5
+  },
+  {
+   "name": "Data Mining",
+   "count": 184,
+   "pct": 1.2
+  },
+  {
+   "name": "Business Intelligence",
+   "count": 164,
+   "pct": 1.1
+  },
+  {
+   "name": "Tableau",
+   "count": 140,
+   "pct": 0.9
+  }
+ ],
+ "categories": [
+  {
+   "key": "bigData",
+   "name": "Big Data",
+   "demandPct": 4.4,
+   "cohortMean": 3.85,
+   "proficiencyPct": 77,
+   "link": 0.11,
+   "unmet": 10,
+   "risk": "MEDIUM"
+  },
+  {
+   "key": "maths",
+   "name": "Maths & Stats",
+   "demandPct": 8.3,
+   "cohortMean": 4.29,
+   "proficiencyPct": 86,
+   "link": 0.52,
+   "unmet": 12,
+   "risk": "HIGH"
+  },
+  {
+   "key": "coding",
+   "name": "Coding",
+   "demandPct": 16.3,
+   "cohortMean": 4.27,
+   "proficiencyPct": 85,
+   "link": 0.44,
+   "unmet": 24,
+   "risk": "HIGH"
+  },
+  {
+   "key": "aiml",
+   "name": "AI & ML",
+   "demandPct": 5.4,
+   "cohortMean": 4.57,
+   "proficiencyPct": 91,
+   "link": 0.4,
+   "unmet": 5,
+   "risk": "MEDIUM"
+  },
+  {
+   "key": "dashboard",
+   "name": "Dashboards & Storytelling",
+   "demandPct": 3.4,
+   "cohortMean": 4.36,
+   "proficiencyPct": 87,
+   "link": 0.55,
+   "unmet": 4,
+   "risk": "LOW"
+  }
+ ],
+ "locations": [
+  {
+   "name": "Bengaluru",
+   "count": 3831,
+   "pct": 25.8
+  },
+  {
+   "name": "Mumbai",
+   "count": 2453,
+   "pct": 16.5
+  },
+  {
+   "name": "Gurgaon",
+   "count": 1950,
+   "pct": 13.1
+  },
+  {
+   "name": "Delhi NCR",
+   "count": 1242,
+   "pct": 8.4
+  },
+  {
+   "name": "Pune",
+   "count": 1163,
+   "pct": 7.8
+  },
+  {
+   "name": "Hyderabad",
+   "count": 1117,
+   "pct": 7.5
+  },
+  {
+   "name": "Chennai",
+   "count": 1032,
+   "pct": 7.0
+  },
+  {
+   "name": "Noida",
+   "count": 648,
+   "pct": 4.4
+  },
+  {
+   "name": "Delhi",
+   "count": 370,
+   "pct": 2.5
+  },
+  {
+   "name": "Kolkata",
+   "count": 260,
+   "pct": 1.8
+  }
+ ],
+ "salaryBands": [
+  {
+   "band": "0–3L",
+   "count": 2565,
+   "pct": 17.3
+  },
+  {
+   "band": "3–6L",
+   "count": 2032,
+   "pct": 13.7
+  },
+  {
+   "band": "6–10L",
+   "count": 2875,
+   "pct": 19.4
+  },
+  {
+   "band": "10–15L",
+   "count": 3503,
+   "pct": 23.6
+  },
+  {
+   "band": "15–25L",
+   "count": 2873,
+   "pct": 19.4
+  },
+  {
+   "band": "25–50L",
+   "count": 992,
+   "pct": 6.7
+  }
+ ],
+ "experience": [
+  {
+   "bucket": "0–2 yrs",
+   "count": 5507,
+   "pct": 37.1
+  },
+  {
+   "bucket": "3–5 yrs",
+   "count": 5247,
+   "pct": 35.4
+  },
+  {
+   "bucket": "6–10 yrs",
+   "count": 3497,
+   "pct": 23.6
+  },
+  {
+   "bucket": "11+ yrs",
+   "count": 589,
+   "pct": 4.0
+  }
+ ],
+ "designations": [
+  {
+   "name": "Business Analyst",
+   "count": 102
+  },
+  {
+   "name": "Data Scientist",
+   "count": 62
+  },
+  {
+   "name": "Data Analyst",
+   "count": 48
+  },
+  {
+   "name": "Product Manager",
+   "count": 44
+  },
+  {
+   "name": "Digital Marketing Manager",
+   "count": 43
+  },
+  {
+   "name": "Home Base Job/ Data Entry/online Work/part Time Work/freelancer work",
+   "count": 42
+  },
+  {
+   "name": "Digital Marketing Executive",
+   "count": 35
+  },
+  {
+   "name": "Analyst",
+   "count": 35
+  },
+  {
+   "name": "SEO Executive",
+   "count": 27
+  },
+  {
+   "name": "Associate",
+   "count": 24
+  }
+ ],
+ "companies": [
+  {
+   "name": "TCS",
+   "jobs": 9064,
+   "avgSalaryL": 6.8
+  },
+  {
+   "name": "Accenture",
+   "jobs": 5425,
+   "avgSalaryL": 8.6
+  },
+  {
+   "name": "Cognizant",
+   "jobs": 3813,
+   "avgSalaryL": 8.8
+  },
+  {
+   "name": "Wipro",
+   "jobs": 2566,
+   "avgSalaryL": 8.6
+  },
+  {
+   "name": "IBM",
+   "jobs": 2480,
+   "avgSalaryL": 10.7
+  },
+  {
+   "name": "Genpact",
+   "jobs": 2147,
+   "avgSalaryL": 6.6
+  },
+  {
+   "name": "Capgemini",
+   "jobs": 1994,
+   "avgSalaryL": 8.0
+  },
+  {
+   "name": "L&T Infotech",
+   "jobs": 1873,
+   "avgSalaryL": 9.7
+  },
+  {
+   "name": "Tech Mahindra",
+   "jobs": 1830,
+   "avgSalaryL": 7.6
+  },
+  {
+   "name": "HCL Technologies",
+   "jobs": 1783,
+   "avgSalaryL": 8.2
+  }
+ ],
+ "titles": [
+  {
+   "title": "Business Analyst",
+   "postings": 32843,
+   "avgSalaryL": 8.5
+  },
+  {
+   "title": "Data Analyst",
+   "postings": 18095,
+   "avgSalaryL": 5.4
+  },
+  {
+   "title": "Senior Business Analyst",
+   "postings": 14115,
+   "avgSalaryL": 12.1
+  },
+  {
+   "title": "Data Scientist",
+   "postings": 9051,
+   "avgSalaryL": 12.9
+  },
+  {
+   "title": "Data Engineer",
+   "postings": 8044,
+   "avgSalaryL": 9.9
+  },
+  {
+   "title": "Senior Data Analyst",
+   "postings": 3825,
+   "avgSalaryL": 9.0
+  },
+  {
+   "title": "Senior Data Engineer",
+   "postings": 3411,
+   "avgSalaryL": 16.7
+  },
+  {
+   "title": "Senior Data Scientist",
+   "postings": 2129,
+   "avgSalaryL": 22.0
+  },
+  {
+   "title": "Machine Learning Engineer",
+   "postings": 964,
+   "avgSalaryL": 9.0
+  },
+  {
+   "title": "Data Architect",
+   "postings": 528,
+   "avgSalaryL": 22.1
+  }
+ ],
+ "junior": {
+  "features": [
+   {
+    "key": "bigData",
+    "label": "Big Data",
+    "mean": 3.85,
+    "high": 3.94,
+    "low": 3.75,
+    "corr": 0.11,
+    "coef": 0.8098480625078271,
+    "std": 0.68
+   },
+   {
+    "key": "maths",
+    "label": "Maths & Stats",
+    "mean": 4.29,
+    "high": 4.71,
+    "low": 3.83,
+    "corr": 0.52,
+    "coef": 1.5272515944273484,
+    "std": 1.28
+   },
+   {
+    "key": "coding",
+    "label": "Coding",
+    "mean": 4.27,
+    "high": 4.64,
+    "low": 3.85,
+    "corr": 0.44,
+    "coef": 0.5993059819464212,
+    "std": 0.53
+   },
+   {
+    "key": "aiml",
+    "label": "AI & ML",
+    "mean": 4.57,
+    "high": 4.82,
+    "low": 4.28,
+    "corr": 0.4,
+    "coef": 1.1470016337229307,
+    "std": 0.76
+   },
+   {
+    "key": "dashboard",
+    "label": "Dashboards & Storytelling",
+    "mean": 4.36,
+    "high": 4.85,
+    "low": 3.81,
+    "corr": 0.55,
+    "coef": 1.201873330052046,
+    "std": 1.12
+   }
+  ],
+  "intercept": -22.925735859277033,
+  "metrics": {
+   "cvAccuracy": 0.82,
+   "cvAUC": 0.906,
+   "baseline": 0.525,
+   "n": 139
+  },
+  "outcomeRate": 0.525,
+  "min": 1,
+  "max": 5
+ },
+ "senior": {
+  "features": [
+   {
+    "key": "neuroticism",
+    "label": "Neuroticism",
+    "mean": 36.19,
+    "high": 36.13,
+    "low": 36.26,
+    "corr": -0.01,
+    "coef": 0.07108192060174141,
+    "std": 0.8
+   },
+   {
+    "key": "extraversion",
+    "label": "Extraversion",
+    "mean": 43.2,
+    "high": 48.86,
+    "low": 36.88,
+    "corr": 0.49,
+    "coef": 0.07884232239241572,
+    "std": 0.95
+   },
+   {
+    "key": "openness",
+    "label": "Openness",
+    "mean": 41.33,
+    "high": 48.49,
+    "low": 33.32,
+    "corr": 0.67,
+    "coef": 0.18103458270919373,
+    "std": 2.04
+   },
+   {
+    "key": "agreeableness",
+    "label": "Agreeableness",
+    "mean": 44.6,
+    "high": 47.72,
+    "low": 41.12,
+    "corr": 0.29,
+    "coef": 0.05576091628659264,
+    "std": 0.63
+   },
+   {
+    "key": "conscientiousness",
+    "label": "Conscientiousness",
+    "mean": 45.21,
+    "high": 53.68,
+    "low": 35.74,
+    "corr": 0.68,
+    "coef": 0.15895952508378028,
+    "std": 2.09
+   }
+  ],
+  "intercept": -23.638308707692364,
+  "metrics": {
+   "cvAccuracy": 0.932,
+   "cvAUC": 0.966,
+   "baseline": 0.528,
+   "n": 161
+  },
+  "outcomeRate": 0.528,
+  "min": 0,
+  "max": 100
+ },
+ "facts": {
+  "skills": "Most requested data/analytics skills in 14840 de-duplicated analytics postings: SQL (5.6%), Python (5.2%), Data Analysis (3.8%), Machine Learning (3.7%), R (3.7%), SAS (3.7%), Excel (2.3%), Data Analytics (2.2%).",
+  "locations": "Top job locations: Bengaluru (25.8%), Mumbai (16.5%), Gurgaon (13.1%), Delhi NCR (8.4%), Pune (7.8%), Hyderabad (7.5%).",
+  "salary": "Salary bands of analytics postings (lakh/yr): 0–3L 17.3%, 3–6L 13.7%, 6–10L 19.4%, 10–15L 23.6%, 15–25L 19.4%, 25–50L 6.7%. Data-science-jobs file average salaries by role: Business Analyst: 32843 postings, avg 8.5L; Data Analyst: 18095 postings, avg 5.4L; Senior Business Analyst: 14115 postings, avg 12.1L; Data Scientist: 9051 postings, avg 12.9L; Data Engineer: 8044 postings, avg 9.9L; Senior Data Analyst: 3825 postings, avg 9.0L; Senior Data Engineer: 3411 postings, avg 16.7L; Senior Data Scientist: 2129 postings, avg 22.0L; Machine Learning Engineer: 964 postings, avg 9.0L; Data Architect: 528 postings, avg 22.1L.",
+  "companies": "Companies with most postings (Data Science Jobs file): TCS (9064 postings, avg 6.8L), Accenture (5425 postings, avg 8.6L), Cognizant (3813 postings, avg 8.8L), Wipro (2566 postings, avg 8.6L), IBM (2480 postings, avg 10.7L), Genpact (2147 postings, avg 6.6L).",
+  "roles": "Postings and average salary by role: Business Analyst: 32843 postings, avg 8.5L; Data Analyst: 18095 postings, avg 5.4L; Senior Business Analyst: 14115 postings, avg 12.1L; Data Scientist: 9051 postings, avg 12.9L; Data Engineer: 8044 postings, avg 9.9L; Senior Data Analyst: 3825 postings, avg 9.0L; Senior Data Engineer: 3411 postings, avg 16.7L; Senior Data Scientist: 2129 postings, avg 22.0L; Machine Learning Engineer: 964 postings, avg 9.0L; Data Architect: 528 postings, avg 22.1L. Most common analytics designations: Business Analyst (102), Data Scientist (62), Data Analyst (48), Product Manager (44), Digital Marketing Manager (43).",
+  "experience": "Minimum experience asked in analytics postings: 0–2 yrs 37.1%, 3–5 yrs 35.4%, 6–10 yrs 23.6%, 11+ yrs 4.0%.",
+  "junior": "Junior data scientists (n=139), 52% got a high salary hike. Mean skill score of high vs low hike: Dashboards & Storytelling: high performers 4.85 vs low 3.81 (r=0.55); Maths & Stats: high performers 4.71 vs low 3.83 (r=0.52); Coding: high performers 4.64 vs low 3.85 (r=0.44); AI & ML: high performers 4.82 vs low 4.28 (r=0.4); Big Data: high performers 3.94 vs low 3.75 (r=0.11). A logistic model predicts the hike with CV accuracy 0.82 and AUC 0.906.",
+  "senior": "Senior customer-facing data scientists (n=161), 53% classified high success. Mean traits successful vs not: Conscientiousness: successful 53.68 vs not 35.74 (r=0.68); Openness: successful 48.49 vs not 33.32 (r=0.67); Extraversion: successful 48.86 vs not 36.88 (r=0.49); Agreeableness: successful 47.72 vs not 41.12 (r=0.29); Neuroticism: successful 36.13 vs not 36.26 (r=-0.01). A logistic model predicts success with CV accuracy 0.932 and AUC 0.966."
+ },
+ "digest": "Most requested data/analytics skills in 14840 de-duplicated analytics postings: SQL (5.6%), Python (5.2%), Data Analysis (3.8%), Machine Learning (3.7%), R (3.7%), SAS (3.7%), Excel (2.3%), Data Analytics (2.2%). Top job locations: Bengaluru (25.8%), Mumbai (16.5%), Gurgaon (13.1%), Delhi NCR (8.4%), Pune (7.8%), Hyderabad (7.5%). Salary bands of analytics postings (lakh/yr): 0–3L 17.3%, 3–6L 13.7%, 6–10L 19.4%, 10–15L 23.6%, 15–25L 19.4%, 25–50L 6.7%. Data-science-jobs file average salaries by role: Business Analyst: 32843 postings, avg 8.5L; Data Analyst: 18095 postings, avg 5.4L; Senior Business Analyst: 14115 postings, avg 12.1L; Data Scientist: 9051 postings, avg 12.9L; Data Engineer: 8044 postings, avg 9.9L; Senior Data Analyst: 3825 postings, avg 9.0L; Senior Data Engineer: 3411 postings, avg 16.7L; Senior Data Scientist: 2129 postings, avg 22.0L; Machine Learning Engineer: 964 postings, avg 9.0L; Data Architect: 528 postings, avg 22.1L. Companies with most postings (Data Science Jobs file): TCS (9064 postings, avg 6.8L), Accenture (5425 postings, avg 8.6L), Cognizant (3813 postings, avg 8.8L), Wipro (2566 postings, avg 8.6L), IBM (2480 postings, avg 10.7L), Genpact (2147 postings, avg 6.6L). Junior data scientists (n=139), 52% got a high salary hike. Mean skill score of high vs low hike: Dashboards & Storytelling: high performers 4.85 vs low 3.81 (r=0.55); Maths & Stats: high performers 4.71 vs low 3.83 (r=0.52); Coding: high performers 4.64 vs low 3.85 (r=0.44); AI & ML: high performers 4.82 vs low 4.28 (r=0.4); Big Data: high performers 3.94 vs low 3.75 (r=0.11). A logistic model predicts the hike with CV accuracy 0.82 and AUC 0.906. Senior customer-facing data scientists (n=161), 53% classified high success. Mean traits successful vs not: Conscientiousness: successful 53.68 vs not 35.74 (r=0.68); Openness: successful 48.49 vs not 33.32 (r=0.67); Extraversion: successful 48.86 vs not 36.88 (r=0.49); Agreeableness: successful 47.72 vs not 41.12 (r=0.29); Neuroticism: successful 36.13 vs not 36.26 (r=-0.01). A logistic model predicts success with CV accuracy 0.932 and AUC 0.966. Skill-group demand vs junior proficiency: Big Data: in 4.4% of postings, cohort 3.85/5; Maths & Stats: in 8.3% of postings, cohort 4.29/5; Coding: in 16.3% of postings, cohort 4.27/5; AI & ML: in 5.4% of postings, cohort 4.57/5; Dashboards & Storytelling: in 3.4% of postings, cohort 4.36/5.",
+ "alerts": [
+  {
+   "severity": "CRITICAL",
+   "title": "Coding has the largest unmet-demand index",
+   "detail": "Needed in 16.3% of analytics postings while juniors average 4.27/5, so demand-weighted headroom is largest here (index 24).",
+   "actions": [
+    "Students: practise Coding",
+    "Agencies: launch a Coding course",
+    "Recruiters: test Coding when screening"
+   ]
+  },
+  {
+   "severity": "WARNING",
+   "title": "Dashboards & Storytelling separates high performers",
+   "detail": "Juniors with high salary hikes score 4.85 vs 3.81 on Dashboards & Storytelling (r=0.55), the strongest link of all five skills.",
+   "actions": [
+    "Students: invest in Dashboards & Storytelling",
+    "Agencies: add projects that train it",
+    "Recruiters: weigh it in junior screening"
+   ]
+  },
+  {
+   "severity": "WARNING",
+   "title": "Conscientiousness and Openness predict senior success",
+   "detail": "Successful seniors average 53.68 vs 35.74 on Conscientiousness and 48.49 vs 33.32 on Openness. Neuroticism shows almost no link (r=-0.01).",
+   "actions": [
+    "Recruiters: assess these traits for client-facing roles",
+    "Agencies: add soft-skill and ownership training",
+    "Students: build projects showing initiative"
+   ]
+  },
+  {
+   "severity": "WATCH",
+   "title": "Big Data is the weakest predictor of salary hikes",
+   "detail": "Only r=0.11 with salary hikes (junior cohort mean 3.85/5), despite heavy demand for it in job postings.",
+   "actions": [
+    "Students: do not neglect it, but prioritise stronger levers first",
+    "Agencies: pair it with practical projects"
+   ]
+  },
+  {
+   "severity": "WATCH",
+   "title": "Bengaluru dominates analytics hiring",
+   "detail": "25.8% of postings mention Bengaluru, followed by Mumbai (16.5%) and Gurgaon (13.1%).",
+   "actions": [
+    "Students: target these hubs or remote roles",
+    "Recruiters: expect competition for talent there"
+   ]
+  },
+  {
+   "severity": "WATCH",
+   "title": "Most postings pay 10–25 lakh",
+   "detail": "23.6% pay 10–15L and 19.4% pay 15–25L; only 6.7% pay 25L+.",
+   "actions": [
+    "Students: senior-level skills unlock the 25L+ band",
+    "Recruiters: benchmark offers against these bands"
+   ]
+  }
+ ],
+ "callouts": {
+  "STUDENT": "Learn SQL, Python, Data Analysis first: they appear most in postings. Then raise Dashboards & Storytelling, the strongest link to salary hikes among juniors.",
+  "RECRUITER": "Screen juniors on Dashboards & Storytelling and Maths & Stats, and seniors on Conscientiousness and Openness. Competition is highest in Bengaluru.",
+  "COURSE_AGENCY": "Teach Coding first (gap index 24), build projects around Dashboards & Storytelling, and cover SQL, Python, Data Analysis."
+ }
+}

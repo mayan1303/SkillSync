@@ -1,0 +1,9 @@
+node_modules
+target
+dist
+*.log
+.secrets
+.ai-key
+.bot-url
+backend/.env
+.DS_Store

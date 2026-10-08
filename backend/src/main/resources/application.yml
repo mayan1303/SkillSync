@@ -1,0 +1,23 @@
+spring:
+  config:
+    import: optional:file:./.env[.properties]
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/wie}
+      auto-index-creation: true
+jwt:
+  secret: ${JWT_SECRET}
+  refresh-secret: ${JWT_REFRESH_SECRET}
+  access-ms: 900000
+  refresh-days: 7
+app:
+  cors-origin: ${CORS_ORIGIN:http://localhost:5173,http://localhost:5174}
+  cookie-secure: ${COOKIE_SECURE:false}
+  seed-demo: ${SEED_DEMO:false}
+ai:
+  anthropic-key: ${ANTHROPIC_API_KEY:}
+  gemini-key: ${GEMINI_API_KEY:}
+  anthropic-model: ${ANTHROPIC_MODEL:claude-haiku-4-5-20251001}
+  custom-url: ${CUSTOM_BOT_URL:}
+  custom-key: ${CUSTOM_BOT_KEY:}
+  gemini-model: ${GEMINI_MODEL:gemini-flash-latest}
