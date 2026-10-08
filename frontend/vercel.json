@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/api/:path*", "destination": "https://YOUR-BACKEND.onrender.com/api/:path*" },
+    { "source": "/api/:path*", "destination": "https://skillsync-1c1u.onrender.com" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
