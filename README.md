@@ -27,3 +27,4 @@ Open **Skill Connect** in the student navigation (`/connect`). It is a LinkedIn-
 - **Network and chat**: send/accept/decline connection requests, then 1:1 chat (updates every 3 s by polling). Privacy flags are enforced on the server.
 - **Data**: `skill_connect_users.csv` (14 members) and `skill_connect_requests.csv` live in `backend/src/main/resources/skillconnect/` and are loaded into MongoDB the first time the app starts (only while the `sc_profiles` collection is empty). Seeded members carry a "demo" badge, accept requests at once and reply automatically. To reload the CSVs, drop the `sc_*` collections and restart.
 - **API**: `/api/student/connect/**` (me, skills, matches, members, feed, posts, connections, chats, badges). Code: `backend/.../com/wie/connect/`, `frontend/src/pages/SkillConnect.jsx`, `frontend/src/components/connect/`.
+# SkillSync
